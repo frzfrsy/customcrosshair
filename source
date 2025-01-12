@@ -1,0 +1,310 @@
+local UI = game.CoreGui:FindFirstChild("UserInterface")
+
+if UI then
+	UI:Destroy()
+end
+
+local Converted = {
+	["_UserInterface"] = Instance.new("ScreenGui");
+	["_Cross"] = Instance.new("ImageLabel");
+	["_Custom"] = Instance.new("ImageButton");
+	["_UIStroke"] = Instance.new("UIStroke");
+	["_UICorner"] = Instance.new("UICorner");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_Source"] = Instance.new("TextBox");
+	["_UIStroke1"] = Instance.new("UIStroke");
+	["_UICorner1"] = Instance.new("UICorner");
+	["_LimitationAndOrientation"] = Instance.new("LocalScript");
+	["_UITextSizeConstraint"] = Instance.new("UITextSizeConstraint");
+	["_Apply"] = Instance.new("ImageButton");
+	["_UIStroke2"] = Instance.new("UIStroke");
+	["_UICorner2"] = Instance.new("UICorner");
+	["_SourceV2"] = Instance.new("TextBox");
+	["_UIStroke3"] = Instance.new("UIStroke");
+	["_UICorner3"] = Instance.new("UICorner");
+	["_LimitationAndOrientation1"] = Instance.new("LocalScript");
+	["_UITextSizeConstraint1"] = Instance.new("UITextSizeConstraint");
+	["_LocalScript1"] = Instance.new("LocalScript");
+}
+
+Converted["_UserInterface"].IgnoreGuiInset = true
+Converted["_UserInterface"].ScreenInsets = Enum.ScreenInsets.DeviceSafeInsets
+Converted["_UserInterface"].ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Converted["_UserInterface"].Name = "UserInterface"
+
+Converted["_Cross"].Image = "rbxassetid://15963047755"
+Converted["_Cross"].ImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Cross"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Cross"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Cross"].BackgroundTransparency = 1
+Converted["_Cross"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Cross"].BorderSizePixel = 0
+Converted["_Cross"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Cross"].Size = UDim2.new(0, 50, 0, 50)
+Converted["_Cross"].Name = "Cross"
+Converted["_Cross"].Parent = Converted["_UserInterface"]
+
+Converted["_Custom"].Image = "http://www.roblox.com/asset/?id=6031084749"
+Converted["_Custom"].ImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Custom"].AnchorPoint = Vector2.new(1, 1)
+Converted["_Custom"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Custom"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Custom"].BorderSizePixel = 0
+Converted["_Custom"].Position = UDim2.new(1, -16, 1, -16)
+Converted["_Custom"].Size = UDim2.new(0, 32, 0, 32)
+Converted["_Custom"].ZIndex = 2
+Converted["_Custom"].Name = "Custom"
+Converted["_Custom"].Parent = Converted["_UserInterface"]
+
+Converted["_UIStroke"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke"].Thickness = 2
+Converted["_UIStroke"].Parent = Converted["_Custom"]
+
+Converted["_UICorner"].Parent = Converted["_Custom"]
+
+Converted["_Source"].ClearTextOnFocus = false
+Converted["_Source"].CursorPosition = -1
+Converted["_Source"].Font = Enum.Font.GothamBold
+Converted["_Source"].PlaceholderText = "Crosshair ID..."
+Converted["_Source"].Text = ""
+Converted["_Source"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Source"].TextScaled = true
+Converted["_Source"].TextSize = 12
+Converted["_Source"].TextStrokeTransparency = 0
+Converted["_Source"].TextWrapped = true
+Converted["_Source"].AnchorPoint = Vector2.new(1, 1)
+Converted["_Source"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Source"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Source"].BorderSizePixel = 0
+Converted["_Source"].Position = UDim2.new(1, 0, 1, 0)
+Converted["_Source"].Name = "Source"
+Converted["_Source"].Parent = Converted["_UserInterface"]
+
+Converted["_UIStroke1"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke1"].Thickness = 2
+Converted["_UIStroke1"].Parent = Converted["_Source"]
+
+Converted["_UICorner1"].Parent = Converted["_Source"]
+
+Converted["_UITextSizeConstraint"].MaxTextSize = 12
+Converted["_UITextSizeConstraint"].Parent = Converted["_Source"]
+
+Converted["_Apply"].Image = "http://www.roblox.com/asset/?id=6023426945"
+Converted["_Apply"].ImageColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Apply"].AnchorPoint = Vector2.new(1, 1)
+Converted["_Apply"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Apply"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Apply"].BorderSizePixel = 0
+Converted["_Apply"].Position = UDim2.new(1, 0, 1, 0)
+Converted["_Apply"].Name = "Apply"
+Converted["_Apply"].Parent = Converted["_UserInterface"]
+
+Converted["_UIStroke2"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke2"].Thickness = 2
+Converted["_UIStroke2"].Parent = Converted["_Apply"]
+
+Converted["_UICorner2"].Parent = Converted["_Apply"]
+
+Converted["_SourceV2"].ClearTextOnFocus = false
+Converted["_SourceV2"].Font = Enum.Font.GothamBold
+Converted["_SourceV2"].PlaceholderText = "Transparency..."
+Converted["_SourceV2"].Text = ""
+Converted["_SourceV2"].TextColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_SourceV2"].TextScaled = true
+Converted["_SourceV2"].TextSize = 12
+Converted["_SourceV2"].TextStrokeTransparency = 0
+Converted["_SourceV2"].TextWrapped = true
+Converted["_SourceV2"].AnchorPoint = Vector2.new(1, 1)
+Converted["_SourceV2"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_SourceV2"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_SourceV2"].BorderSizePixel = 0
+Converted["_SourceV2"].Position = UDim2.new(1, 0, 1, 0)
+Converted["_SourceV2"].Name = "SourceV2"
+Converted["_SourceV2"].Parent = Converted["_UserInterface"]
+
+Converted["_UIStroke3"].ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+Converted["_UIStroke3"].Thickness = 2
+Converted["_UIStroke3"].Parent = Converted["_SourceV2"]
+
+Converted["_UICorner3"].Parent = Converted["_SourceV2"]
+
+Converted["_UITextSizeConstraint1"].MaxTextSize = 12
+Converted["_UITextSizeConstraint1"].Parent = Converted["_SourceV2"]
+
+Converted["_UserInterface"].Parent = game.CoreGui
+
+local fake_module_scripts = {}
+
+local function PFZPSLS_fake_script() -- Fake Script: Workspace.UserInterface.Custom.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Custom"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local Custom = script.Parent
+	local Apply = script.Parent.Parent.Apply
+	local Source = script.Parent.Parent.Source
+	local SourceV2 = script.Parent.Parent.SourceV2
+	
+	local enable = false
+	
+	Custom.MouseButton1Click:Connect(function()
+		if enable == false then
+			enable = true
+			
+			Apply:TweenSizeAndPosition(
+				UDim2.fromOffset(32, 32),
+				UDim2.new(1, -16, 1, -64),
+				Enum.EasingDirection.InOut,
+				Enum.EasingStyle.Quint,
+				0.5
+			)
+			
+			Source:TweenSizeAndPosition(
+				UDim2.fromOffset(100, 32),
+				UDim2.new(1, -64, 1, -16),
+				Enum.EasingDirection.InOut,
+				Enum.EasingStyle.Quint,
+				0.5
+			)
+			
+			SourceV2:TweenSizeAndPosition(
+				UDim2.fromOffset(100, 32),
+				UDim2.new(1, -64, 1, -64),
+				Enum.EasingDirection.InOut,
+				Enum.EasingStyle.Quint,
+				0.5
+			)
+		else
+			enable = false
+			
+			Apply:TweenSizeAndPosition(
+				UDim2.fromOffset(0, 0),
+				UDim2.new(1, 0, 1, 0),
+				Enum.EasingDirection.InOut,
+				Enum.EasingStyle.Quint,
+				0.5
+			)
+	
+			Source:TweenSizeAndPosition(
+				UDim2.fromOffset(0, 0),
+				UDim2.new(1, 0, 1, 0),
+				Enum.EasingDirection.InOut,
+				Enum.EasingStyle.Quint,
+				0.5
+			)
+			
+			SourceV2:TweenSizeAndPosition(
+				UDim2.fromOffset(0, 0),
+				UDim2.new(1, 0, 1, 0),
+				Enum.EasingDirection.InOut,
+				Enum.EasingStyle.Quint,
+				0.5
+			)
+		end
+	end)
+end
+local function NHLVDZB_fake_script() -- Fake Script: Workspace.UserInterface.Source.LimitationAndOrientation
+    local script = Instance.new("LocalScript")
+    script.Name = "LimitationAndOrientation"
+    script.Parent = Converted["_Source"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local textBox = script.Parent
+	local Apply = textBox.Parent.Apply
+	
+	local function onlyAllowNumbers()
+		textBox.Text = string.gsub(textBox.Text, "%D", "")
+	end
+	
+	local function loadImage()
+		local imageId = "rbxassetid://" .. textBox.Text
+		textBox.Parent.Cross.Image = imageId
+		
+		if textBox.Parent.Cross.IsLoaded == false then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Crazitifation",
+				Text = "Invalid image ID or failed to load image. 😅",
+				Duration = 2
+			})
+			
+			return
+		end
+	end
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(onlyAllowNumbers)
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		if #textBox.Text > 10 then
+			textBox.Text = string.sub(textBox.Text, 1, 11)
+		end
+	end)
+	
+	Apply.MouseButton1Click:Connect(loadImage)
+end
+local function DUOXN_fake_script() -- Fake Script: Workspace.UserInterface.SourceV2.LimitationAndOrientation
+    local script = Instance.new("LocalScript")
+    script.Name = "LimitationAndOrientation"
+    script.Parent = Converted["_SourceV2"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local textBox = script.Parent
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		if #textBox.Text > 10 then
+			textBox.Text = string.sub(textBox.Text, 1, 3)
+		end
+	end)
+	
+	textBox.Parent.Apply.MouseButton1Click:Connect(function()
+		local txt = textBox.Text
+		textBox.Parent.Cross.ImageTransparency = txt
+	end)
+	
+	
+end
+local function ERDAF_fake_script() -- Fake Script: Workspace.UserInterface.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_UserInterface"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	game.Players.LocalPlayer.Chatted:Connect(function(message, recipient)
+		if message == "/destroy UI" then
+			script.Parent:Destroy()
+		end
+	end)
+end
+
+coroutine.wrap(PFZPSLS_fake_script)()
+coroutine.wrap(NHLVDZB_fake_script)()
+coroutine.wrap(DUOXN_fake_script)()
+coroutine.wrap(ERDAF_fake_script)()
